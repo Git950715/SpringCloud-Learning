@@ -8,3 +8,5 @@
 ## 2.服务注册中心 [SpringCloud-Eureka](https://github.com/Git950715/SpringCloud-Learning/tree/master/SpringCloud-Eureka)
 
 ## 3.注册服务中心，并使用Feign调用服务 [SpringCloud-Feign](https://github.com/Git950715/SpringCloud-Learning/tree/master/SpringCloud-Feign)
+
+## 4.服务提供者宕机，消费者熔断保证服务可用（Hystrix） [SpringCloud-Hystrix](https://github.com/Git950715/SpringCloud-Learning/tree/master/SpringCloud-Hystrix)
