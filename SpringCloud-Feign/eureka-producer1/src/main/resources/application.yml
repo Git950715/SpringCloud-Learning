@@ -1,0 +1,13 @@
+server:
+  port: 8763
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8760/eureka/
+
+spring:
+  application:
+    name: eurka-producer
