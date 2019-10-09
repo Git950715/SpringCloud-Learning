@@ -78,6 +78,11 @@ SpringCloud核心之一，用于服务注册与发现，详细介绍可自行Goo
         eureka.client.serviceUrl.defaultZone=http://peer1:8761/eureka/,http://peer3:8763/eureka/
         ......
    
+   当然你在启动服务的时候还需要将peer1，和peer2配置到路由中，不然解析不了peer1和peer2。linux系统通过vim /etc/hosts ，windows电脑，在c:/windows/systems/drivers/etc/hosts。
+        
+        127.0.0.1 peer1
+        127.0.0.1 peer2
+   
    其实你也可以只建一个项目，使用不同的配置文件就可以了，这样启动项目的时候指定不同的配置文件也是可以的，但是本人在windows上没有打包，方便测试就建了两个项目。
    
    分别启动项目之后分别访问，http://localhost:8761/ 和 http://localhost:8762/ 你就可以看到
