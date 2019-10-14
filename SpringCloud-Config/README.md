@@ -117,3 +117,24 @@
       }
       
   访问http://127.0.0.1:8772/api/config/test 可以正常输出配置在Git的文件配置。
+  
+## 高可用的配置服务中心
+
+  看到这里，你们可能会想到，配置中心就一台挂了怎么办，所以我们采用集群的方式保证高可用性。在SpringCloud中，集群的方式都可以注册到eureka中去，让eureka帮我们去分发请求。
+  
+  ### eureka-config-server2
+  1.按照ureka-config-server配置，只需要改动一下application.properties配置文件中的端口server.port=8771
+  
+  ### eureka-config-client
+  我们需要修改一下上面eureka-config-client的bootstrap.properties配置文件。
+  
+      eureka.instance.hostname=localhost
+      eureka.client.serviceUrl.defaultZone=http://localhost:8760/eureka/
+      spring.cloud.config.label=master
+      spring.cloud.config.name=eurka-config-client
+      spring.cloud.config.profile=dev
+      #spring.cloud.config.uri=http://localhost:8770/
+      spring.cloud.config.discovery.enabled=true
+      spring.cloud.config.discovery.serviceId=eurka-config-server
+      
+  修改完成后，启动项目访问http://127.0.0.1:8772/api/config/test 发现可以输出信息，就算停掉一个config-server也是可以的。
