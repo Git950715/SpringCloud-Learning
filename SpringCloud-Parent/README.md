@@ -15,21 +15,21 @@
 	<parent>
 	    <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-parent</artifactId>
-            <version>2.0.4.RELEASE</version>
+            <version>2.0.3.RELEASE</version>
             <relativePath />
 	</parent>
 	
-    我引用的SpringBoot是2.0.4版本。
+    我引用的SpringBoot是2.0.3版本。
     
   3：<modules></modules>可以将子项目的artifactId放入其中，引用到子项目，这样打包的时候就可以都打包了。
   
-  4：properties都是一些简单的配置，由这可以看出我SpringCloud的版本使用的是Finchley.SR4。
+  4：properties都是一些简单的配置，由这可以看出我SpringCloud的版本使用的是Finchley.RELEASE。
     
     <properties>
 	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
             <java.version>1.8</java.version>
-	    <spring-cloud.version>Finchley.SR4</spring-cloud.version>
+	    <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 	</properties>
 	  
   5：为了保持子项目中的SpringCloud版本保持一致，使用dependencyManagement。
