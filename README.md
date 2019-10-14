@@ -10,3 +10,7 @@
 ## 3.注册服务中心，并使用Feign调用服务 [SpringCloud-Feign](https://github.com/Git950715/SpringCloud-Learning/tree/master/SpringCloud-Feign)
 
 ## 4.服务提供者宕机，消费者熔断保证服务可用（Hystrix） [SpringCloud-Hystrix](https://github.com/Git950715/SpringCloud-Learning/tree/master/SpringCloud-Hystrix)
+
+## 5.网关实现路由转发和过滤器（Zuul） [SpringCloud-Zuul](https://github.com/Git950715/SpringCloud-Learning/tree/master/SpringCloud-Zuul)
+
+## 6.文件配置中心，配置文件统一管理（Config） [SpringCloud-Config](https://github.com/Git950715/SpringCloud-Learning/tree/master/SpringCloud-Config)
