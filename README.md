@@ -14,3 +14,5 @@
 ## 5.网关实现路由转发和过滤器（Zuul） [SpringCloud-Zuul](https://github.com/Git950715/SpringCloud-Learning/tree/master/SpringCloud-Zuul)
 
 ## 6.文件配置中心，配置文件统一管理（Config） [SpringCloud-Config](https://github.com/Git950715/SpringCloud-Learning/tree/master/SpringCloud-Config)
+
+## 7.配置文件修改，客户端统一更新配置（Bus）[SpringCloud-Bus](https://github.com/Git950715/SpringCloud-Learning/tree/master/SpringCloud-Bus)
